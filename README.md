@@ -1,4 +1,4 @@
-OpenStack-Hypervisor-Balance
+sysdrain.py
 ============================
 
 sysdrain.py can be used to drain an hypervisor, it will live migrate the vm (moving the storage too).
