@@ -25,7 +25,7 @@ sleep_between_hosts_time = 3
 
 argparser = argparse.ArgumentParser(description='Move instances between OpenStack hypervisors')
 argparser.add_argument('-H', '--draining-hypervisor', nargs=1, default=None, help='Specify a particular hypervisor from which to drain all instances')
-argparser.add_argument('-T', '--tenant', nargs=1, default=None, help='Specify a particular tenant from which to drain all instances')
+argparser.add_argument('-T', '--tenant', nargs=1, default=None, help='Specify a particular tenant from which to drain all instances on the selected hv')
 argparser.add_argument('-P', '--ping', default=False, action='store_true', help='ping the vm before and after the move, needs -N')
 argparser.add_argument('-D', '--destination', nargs=1, default=None, help='Destination hypervisor, if none scheduler will pick one')
 argparser.add_argument('-N', '--network', nargs=1, default=None, help='network to ping over (eth0, eth1)')
