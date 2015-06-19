@@ -194,7 +194,7 @@ fi
 
 nova start $NEWUUID &>/dev/null
 
-echo "$1 has been migrated to $2, new uid is $NEWUUID, can i delete $1?"
+echo "$1 has been migrated to $2, its new uuid is $NEWUUID, can i delete $1?"
 echo "y/n"
 read continue
 if [ x$continue != xy ]; then
