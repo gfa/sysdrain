@@ -120,6 +120,7 @@ NOVA_OPTS="${NOVA_OPTS} --image $image --flavor $flavor"
 set +e
 
 echo "$1 will be stopped and (offline) migrated to $2, ready?"
+echo "you need to have admin role on $tenantname for this to work"
 echo "y/n"
 read continue
 if [ x$continue != xy ]; then
