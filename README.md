@@ -36,3 +36,8 @@ needs openstack admin credentials sourced before run and network access to nova-
 
 
 based on BMDan/OpenStack-Hypervisor-Balance
+
+sysdrain-offline.sh
+============================
+
+sysdrain-offline.sh can be used to move vm from an hv to another hv offline, it will stop the vm and recreate it with the same disk an ip address on the destination hv. It will take care of meta keys and other metadata
